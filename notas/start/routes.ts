@@ -22,6 +22,8 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.resource('notas', 'NotasController').apiOnly()
 
+Route.resource('usuario', 'UsuariosController').apiOnly()
+
 Route.get('/', async () => {
   return { hello: 'world' }
 })
